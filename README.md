@@ -11,7 +11,7 @@ A lightweight wrapper of the amazing [spaCy](https://spacy.io) Python package.
 ```julia
 using Spacy
 
-nlp = spacy.load("en_core_web_sm")
+nlp = Spacy.load("en_core_web_sm")  # will download the model if needed.
 
 text = """
     When Sebastian Thrun started working on self-driving cars at
