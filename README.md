@@ -3,6 +3,8 @@
 
 A lightweight wrapper of the amazing [spaCy](https://spacy.io) Python package.
 
+I do not plan on registering this since it's like 20 lines of code, but it may be a good starting point for a real wrapper package.
+
 ## Usage
 
 
