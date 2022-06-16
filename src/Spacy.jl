@@ -7,7 +7,7 @@ export spacy
 
 function __init__()
     "spacy" in Conda._installed_packages() || Conda.add("spacy");
-	global spacy = pyimport("spacy")
+    global spacy = pyimport("spacy")
 end
 
 const python3 = joinpath(Conda.python_dir(Conda.ROOTENV), "python3")
