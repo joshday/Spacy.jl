@@ -11,7 +11,9 @@ A lightweight wrapper of the amazing [spaCy](https://spacy.io) Python package.
 ```julia
 using Spacy
 
-nlp = Spacy.load("en_core_web_sm")  # will download the model if needed.
+spacy.cli.download("en_core_web_sm")
+
+nlp = spacy.load("en_core_web_sm")
 
 text = """
     When Sebastian Thrun started working on self-driving cars at
@@ -32,10 +34,10 @@ end
 - Output
 ```
 Sebastian Thrun (PERSON)
+Google (ORG)
 2007 (DATE)
 American (NORP)
 Thrun (PERSON)
 Recode (ORG)
-earlier
 this week (DATE)
 ```
